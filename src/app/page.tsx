@@ -56,21 +56,27 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ivory via-beige/20 to-ivory" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink-black">
+        {/* Video Background from YouTube */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+          <iframe
+            src="https://www.youtube.com/embed/5U7zB1qEq7w?autoplay=1&mute=1&loop=1&playlist=TCcO0_l9zGI&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+            title="Romantic Cinematic Background"
+            className="absolute top-1/2 left-1/2 w-[400vw] h-[400vh] md:w-[200vw] md:h-[200vh] lg:w-[150vw] lg:h-[150vh] -translate-x-1/2 -translate-y-1/2 object-cover opacity-80"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            style={{ pointerEvents: 'none' }}
+          />
+          {/* Dark overlay to make text readable */}
+          <div className="absolute inset-0 bg-ink-black/50" />
+        </div>
 
-        {/* Subtle decorative elements */}
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-warm-sand-rose/10 blur-3xl" />
-        <div className="absolute bottom-1/3 left-1/4 w-48 h-48 rounded-full bg-blush/10 blur-3xl" />
-
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-xs tracking-[0.3em] uppercase text-taupe font-body mb-8">
+            <p className="text-xs tracking-[0.3em] uppercase text-white/80 font-body mb-8">
               Intimate Event Organizer · Jakarta
             </p>
           </motion.div>
@@ -79,11 +85,11 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.4 }}
-            className="font-serif text-4xl md:text-6xl lg:text-7xl text-ink-black leading-tight tracking-tight"
+            className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight drop-shadow-lg"
           >
             Cherished moments,
             <br />
-            <span className="italic text-taupe">beloved memories</span>
+            <span className="italic text-beige">beloved memories</span>
           </motion.h1>
 
           <motion.div
@@ -91,14 +97,14 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <SectionDivider className="max-w-32 mx-auto my-8" />
+            <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent max-w-32 mx-auto my-8" />
           </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="text-base md:text-lg text-charcoal-grey font-body leading-relaxed max-w-2xl mx-auto"
+            className="text-base md:text-lg text-white/90 font-body leading-relaxed max-w-2xl mx-auto drop-shadow-md"
           >
             Ada momen yang ingin dirayakan dengan pelan.
             <br className="hidden md:block" />
@@ -115,7 +121,7 @@ export default function HomePage() {
           >
             <Link
               href="/booking"
-              className="group flex items-center gap-3 px-8 py-4 bg-ink-black text-ivory text-sm tracking-editorial uppercase font-body hover:bg-charcoal-grey transition-colors duration-300"
+              className="group flex items-center gap-3 px-8 py-4 bg-white text-ink-black text-sm tracking-editorial uppercase font-body hover:bg-beige transition-colors duration-300"
             >
               Mulai Konsultasi
               <ArrowRight
@@ -125,7 +131,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 text-sm tracking-editorial uppercase font-body text-taupe hover:text-ink-black transition-colors duration-300 border-b border-transparent hover:border-taupe"
+              className="px-8 py-4 text-sm tracking-editorial uppercase font-body text-white hover:text-beige transition-colors duration-300 border-b border-transparent hover:border-white/50"
             >
               Lihat Layanan
             </Link>
@@ -142,7 +148,7 @@ export default function HomePage() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-px h-10 bg-gradient-to-b from-taupe/50 to-transparent"
+            className="w-px h-10 bg-gradient-to-b from-white/50 to-transparent"
           />
         </motion.div>
       </section>
