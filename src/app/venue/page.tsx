@@ -70,6 +70,14 @@ export default function VenuePage() {
               </FadeIn>
             ))}
           </div>
+
+          <FadeIn delay={0.4}>
+            <div className="mt-16 text-center">
+              <p className="font-serif text-2xl text-ink-black/80 italic">
+                Dan banyak lagi...
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </section>
     </>

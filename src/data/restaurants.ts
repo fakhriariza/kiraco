@@ -41,7 +41,7 @@ export const RESTAURANTS = [
     description:
       "Luxury European-style setting offering an Intercontinental menu with a blend of Western and Indonesian cuisines.",
     priceRange: "IDR 350K – 1M++ /pax",
-    image: "/images/restaurants/sofia.jpg",
+    image: "/images/restaurants/sofia.png",
   },
   {
     id: "neighbourhood",
