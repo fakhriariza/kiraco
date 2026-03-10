@@ -59,13 +59,13 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink-black">
         {/* Video Background from YouTube */}
         <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
-          <iframe
-            src="https://www.youtube.com/embed/5U7zB1qEq7w?autoplay=1&mute=1&loop=1&playlist=TCcO0_l9zGI&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
-            title="Romantic Cinematic Background"
-            className="absolute top-1/2 left-1/2 w-[400vw] h-[400vh] md:w-[200vw] md:h-[200vh] lg:w-[150vw] lg:h-[150vh] -translate-x-1/2 -translate-y-1/2 object-cover opacity-80"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            style={{ pointerEvents: 'none' }}
-          />
+        <iframe
+  src="https://www.youtube.com/embed/PvJJzqQstLw?autoplay=1&mute=1&loop=1&playlist=PvJJzqQstLw&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+  title="Romantic Cinematic Background"
+  className="absolute top-1/2 left-1/2 w-[400vw] h-[400vh] md:w-[200vw] md:h-[200vh] lg:w-[150vw] lg:h-[150vh] -translate-x-1/2 -translate-y-1/2 object-cover opacity-80"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  style={{ pointerEvents: 'none' }}
+/>
           {/* Dark overlay to make text readable */}
           <div className="absolute inset-0 bg-ink-black/50" />
         </div>
