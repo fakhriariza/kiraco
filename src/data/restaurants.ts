@@ -46,13 +46,14 @@ export const RESTAURANTS = [
   {
     id: "neighbourhood",
     name: "The Neighbourhood",
-    venue: "Kebayoran Lama",
+    venue: "Petogogan, Kebayoran Baru",
     floor: "Ground Level",
     cuisine: "International & Indonesian",
     description:
       "Chic urban dining with a calm ambiance, offering diverse meat dishes, pasta, and traditional Indonesian recipes.",
     priceRange: "IDR 250K – 500K++ /pax",
     image: "/images/restaurants/neighbourhood.jpg",
+    mapLink: "https://share.google/QYlgTeKxqp9I1FsvE",
   },
   {
     id: "plataran-menteng",
@@ -97,5 +98,41 @@ export const RESTAURANTS = [
       "Luxurious fine-dining getaway by Chef Gilles Marx, offering impeccable service and seasonally inspired French culinary artistry.",
     priceRange: "IDR 800K – 2M++ /pax",
     image: "/images/restaurants/amuz.jpg",
+  },
+  {
+    id: "bottega",
+    name: "Bottega Ristorante",
+    venue: "Fairgrounds SCBD",
+    floor: "Ground Level",
+    cuisine: "Modern European & Italian",
+    description:
+      "Stylish fine dining offering diverse modern European and Italian cuisines, renowned for its elegant atmosphere.",
+    priceRange: "IDR 200K – 600K++ /pax",
+    image: "/images/restaurants/bottega.jpg",
+    mapLink: "https://share.google/o09xXMRH2uH83COil",
+  },
+  {
+    id: "nustro",
+    name: "Nustro",
+    venue: "Tebet Skyline",
+    floor: "Rooftop",
+    cuisine: "Comfort Food & Steak",
+    description:
+      "Rooftop dining experience with city views featuring comfort food and a specialization in premium steaks.",
+    priceRange: "IDR 100K – 350K++ /pax",
+    image: "/images/restaurants/nustro.jpg",
+    mapLink: "https://share.google/2gOI6SMRj9W71PVKn",
+  },
+  {
+    id: "august",
+    name: "August",
+    venue: "Sequis Tower, SCBD",
+    floor: "Ground Level",
+    cuisine: "Contemporary Indonesian",
+    description:
+      "Award-winning fine dining by Chef Hans Christian offering an innovative Chef's Journey with modern Indonesian flavors.",
+    priceRange: "IDR 1.2M – 1.8M++ /pax",
+    image: "/images/restaurants/august.jpg",
+    mapLink: "https://share.google/DRWEorNZvwwd27PsU",
   },
 ];

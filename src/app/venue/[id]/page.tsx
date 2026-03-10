@@ -85,9 +85,22 @@ export default function VenueDetailPage({ params }: { params: { id: string } }) 
                       <MapPin size={16} className="text-rose-gold" />
                       <span className="font-serif text-lg tracking-wide">Lokasi</span>
                     </div>
-                    <span className="font-body text-xs text-charcoal-grey uppercase tracking-wider">
-                      {venue.venue}
-                    </span>
+                    {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                    {/* @ts-ignore - mapLink is optional on the exported constant */}
+                    {venue.mapLink ? (
+                      <a 
+                        href={(venue as any).mapLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="font-body text-xs text-charcoal-grey uppercase tracking-wider hover:text-rose-gold transition-colors underline underline-offset-4"
+                      >
+                        {venue.venue}
+                      </a>
+                    ) : (
+                      <span className="font-body text-xs text-charcoal-grey uppercase tracking-wider">
+                        {venue.venue}
+                      </span>
+                    )}
                   </div>
                 </div>
 
